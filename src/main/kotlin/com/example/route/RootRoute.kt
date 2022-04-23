@@ -8,6 +8,6 @@ import io.ktor.server.routing.*
 fun Routing.rootRoute() {
 
     get(Endpoint.Root.path) {
-        call.respondText("Hello World!")
+        call.respondText("Welcome to Ktor Server!")
     }
 }
