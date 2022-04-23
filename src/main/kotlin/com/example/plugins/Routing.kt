@@ -1,6 +1,8 @@
 package com.example.plugins
 
+import com.example.route.authorizedRoute
 import com.example.route.rootRoute
+import com.example.route.tokenVerificationRoute
 import com.example.route.unauthorizedRoute
 import io.ktor.server.routing.*
 import io.ktor.http.*
@@ -12,6 +14,8 @@ fun Application.configureRouting() {
 
     routing {
         rootRoute()
+        tokenVerificationRoute()
+        authorizedRoute()
         unauthorizedRoute()
     }
 }

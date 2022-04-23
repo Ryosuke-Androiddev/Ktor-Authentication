@@ -12,7 +12,7 @@ fun Application.configureSession() {
         val secretEncryptKey = hex("")
         val secretAuthKey = hex("")
 
-        // Key を使って、暗号化されたものを解読しているのか
+        // Key を使って、暗号化している
         cookie<UserSession>(
             name = "USER_SESSION",
             storage = directorySessionStorage(File(".sessions"))
